@@ -1,0 +1,116 @@
+body{
+	background-color: black;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+
+#header{
+	position: relative;
+	text-align: center;
+	color: white;
+	border-top-right-radius: 7px;
+	border-top-left-radius: 7px;
+	background-color: red;
+	width: 400px;
+	left: 50%;
+	margin-left: -200px;
+}
+
+#footer{
+	position: relative;
+	text-align: center;
+	border-bottom-right-radius: 7px;
+	border-bottom-left-radius: 7px;
+	background-color: red;
+	width: 400px;
+	left: 50%;
+	margin-left: -200px;
+}
+
+#form{
+	position: relative;
+	background-color: white;
+	width: 400px;
+	left: 50%;
+	margin: -22px 0 0 -200px;
+	text-align: right;
+}
+
+form{
+	font-size: 0;
+	width: 100%;
+}
+
+label, input{
+	display: inline-block;
+	font-size: 16px;
+}
+
+label{
+	color: black;
+}
+
+input{
+	padding: 3px 30px;
+}
+
+input[type=text]:focus {
+  border: 2px solid #555;
+  background-color: Beige;
+}
+
+button{
+	background-color: red;
+	border: 2px solid white;
+	color: white;
+	padding: 8px 28px;
+	text-align: center;
+	font-size: 18px;
+	border-radius: 4px;
+	transition: all 0.5s;
+	cursor: pointer;
+	display: inline-block;
+	margin: 10px;
+}
+
+button span {
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+button.send span:after {
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+button.reset span:after{
+	content: '<<';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -20px;
+  transition: 0.5s;
+}
+
+button.send:hover span {
+  padding-right: 25px;
+}
+
+button.reset:hover span{
+	padding-left: 25px;
+}
+
+button.send:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+button.reset:hover span:after {
+  opacity: 1;
+  left: 0;
+}
